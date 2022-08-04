@@ -1,0 +1,48 @@
+// main: ../../style.less
+
+.blogs
+{
+    margin: 12.7rem auto;
+}
+
+.blogs__inner
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.blogs__cards
+{
+    position: relative;
+    
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2.33rem 0;   
+    justify-content: space-between;
+}
+
+.blogs__topic
+{
+    text-align: center;
+    margin-bottom: 3.7rem;
+}
+
+button.blogs__btn
+{
+    position: absolute;
+    right: 0;
+    bottom: -2%;
+
+    color: @grey;
+    background: none;
+    border: 0;
+    text-decoration: underline;
+
+    cursor: pointer;
+
+    &:hover
+    {
+        text-decoration: none;
+    }
+}

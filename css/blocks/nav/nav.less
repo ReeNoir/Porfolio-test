@@ -1,0 +1,23 @@
+// main: ../../style.less
+
+.nav-element
+{
+    position: relative;
+
+    color: @black;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    transition: color .2s linear;
+
+    &:after
+    {
+        content: "";
+        display: block;
+        width: 0;
+
+        position: absolute;
+
+        transition: width .1s linear;
+    }
+}

@@ -1,0 +1,32 @@
+// main: ../../style.less
+
+.header__nav-element
+{
+    margin-left: 2.3rem;
+
+    font-weight: 700;
+
+    &:after
+    {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color: @black;
+
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        z-index: 1;
+
+        transition: width .1s linear;
+    }
+
+    &:hover
+    {
+        &:after
+        {
+            width: 100%;
+        }
+    }
+}

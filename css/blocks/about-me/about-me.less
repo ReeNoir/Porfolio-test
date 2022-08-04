@@ -1,0 +1,70 @@
+// main: ../../style.less
+
+.about-me
+{
+    margin: 8.4rem auto;
+}
+
+.about-me__inner
+{
+    display: flex;
+    max-width: 1100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-me__photo
+{
+    position: relative;
+    width: 50%;
+
+    .img
+    {
+        position: relative;
+        z-index: 2;
+    }
+
+    &:before
+    {
+        content: "";
+        width: 413px;
+        height: 413px;
+        background-color: #EFEFEF;
+        position: absolute;
+        left: 1rem;
+        bottom: 0;
+        z-index: 1;
+    }
+}
+
+.about-me__content
+{
+    margin: 2rem 0 0 4rem;
+    width: 50%;
+}
+
+.about-me__title
+{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.about-me__subtitle
+{
+    position: relative;
+    left: -15px;
+
+    font-size: 6.13rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: rgba(@black, 0.15);
+}
+
+.about-me__text
+{
+    margin: 2rem 0;
+
+    font-size: 0.8rem;
+    font-weight: 300;
+}
