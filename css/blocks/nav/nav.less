@@ -1,5 +1,11 @@
 // main: ../../style.less
 
+.nav
+{
+    display: flex;
+    align-items: center;
+}
+
 .nav-element
 {
     position: relative;
@@ -17,6 +23,7 @@
         width: 0;
 
         position: absolute;
+        z-index: 1;
 
         transition: width .1s linear;
     }
