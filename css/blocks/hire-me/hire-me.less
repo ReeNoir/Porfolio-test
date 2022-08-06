@@ -1,0 +1,104 @@
+// main: ../../style.less
+
+.hire-me
+{
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.hire-me__contact-window
+{
+    padding: 2.3rem;
+    width: 48%;
+    background-color: @white;
+}
+
+.hire-me__img
+{
+    width: 52%;
+}
+
+.hire-me__title
+{
+    padding-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.hire-me__subtitle
+{
+    font-size: 1.06rem;
+    font-weight: 400;
+}
+
+.hire-me__contacts
+{
+    padding-bottom: 3rem;
+
+    font-size: 0.93rem;
+    font-weight: 200;
+    line-height: 2;
+}
+
+.hire-me__contacts a
+{
+    display: block;
+    color: @black;
+    text-decoration: none;
+}
+
+.hire-me__request
+{
+    position: relative;
+}
+
+.hire-me__field
+{
+    margin: 0;
+    padding: 0 0 1.6rem 0;
+
+    border: 0;
+
+    font-size: 0.8rem;
+    font-weight: 700;
+
+    & legend
+    {
+        padding-bottom: 0.5rem;
+    }
+
+    & input,
+    & textarea
+    {
+        width: 100%;
+        padding: 1.3rem 2rem;
+
+        border: 1px solid #a8a6a6;
+        border-radius: 30px;
+    }
+
+    & input::placeholder
+    {
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
+
+    & textarea
+    {
+        height: 200px;
+        resize: none;
+    }
+}
+
+.hire-me__send-btn
+{
+    padding: 1rem 4rem;
+}
+
+.help-right
+{
+    text-align: right;
+}

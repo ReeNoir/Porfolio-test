@@ -314,7 +314,7 @@
 
 
 
-<!-- Works Modals -->
+<!-- Works Modal -->
 <div class="modal modal_none">
 <div class="modal__inner works__modal">
 
@@ -350,7 +350,7 @@
 </div>
 
 <!-- Resume Modal -->
-<div class="modal">
+<div class="modal modal_none">
 <div class="modal__inner resume__modal">
 
     <button class="modal__close-btn" type="button">
@@ -459,6 +459,38 @@
     </div>
     <button class="btn resume__hire-btn">hire me</button>
 
+</div>
+</div>
+
+<!-- Hire-me Modal -->
+<div class="modal">
+<div class="modal__inner hire-me">
+
+    <button class="modal__close-btn" type="button">
+        <img class="modal__close-img" src="img/modal__close-btn.svg" alt="">
+    </button>
+    <div class="hire-me__contact-window">
+        <div class="hire-me__title">
+            let's talk!
+            <div class="hire-me__subtitle">call me or send me a request</div>
+        </div>
+        <div class="hire-me__contacts">
+            <a href="tel:200-100-3000"><i class="fa-solid fa-square-phone"></i> (200) 100 3000</a>
+            <a href="mailto:designer@ui43.com"><i class="fa-solid fa-envelope"></i> designer@ui43.com</a>
+        </div>
+        <form action="#" method="post" enctype="application/x-www-form-urlencoded" class="hire-me__request">
+            <fieldset class="hire-me__field">
+                <legend>Adress e-mail</legend>
+                <input type="email" placeholder="Adress e-mail" class="hire-me__email-box" name="request">
+            </fieldset>
+            <fieldset class="hire-me__field">
+                <legend>Request</legend>
+                <textarea type="text" placeholder="Type your request..." class="hire-me__request-box" name="request"></textarea>
+            </fieldset>
+            <div class="help-right"><button class="hire-me__send-btn btn" type="submit">Send</button></div>
+        </form>
+    </div>
+    <img src="img/Hire-me__placehold.jpg" alt="" class="hire-me__img">
 </div>
 </div>
 
