@@ -1,0 +1,176 @@
+// main: ../../style.less
+
+.resume__modal
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    background-color: @white;
+}
+
+.resume__title
+{
+    padding-top: 3rem;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.resume__title_small
+{
+    padding-bottom: 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.resume__copy-btn
+{
+    padding: 3.1rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.resume__btn,
+.resume__btn_small
+{
+    padding: 0.8rem 1.6rem;
+
+    font-size: 0.8rem;
+    color: @grey;
+}
+
+.resume__btn
+{
+    margin-right: 1rem;
+}
+
+.resume__btn_small
+{
+    padding: 0.8rem 4.2rem;
+}
+
+.resume__hire-btn
+{
+    margin: 5rem auto 3rem;
+    padding: 1rem 4.3rem;
+}
+
+.resume__timeline
+{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.resume__col
+{
+    width: 50%;
+
+    &_left
+    {
+        text-align: right;
+        padding-right: 3rem;
+        border-right: 2px solid @grey;
+    }
+
+    &_right
+    {
+        padding-left: 3rem;
+    }
+}
+
+.resume__educaion,
+.resume__skils
+{
+    margin-bottom: 2.5rem;
+}
+
+.resume__period
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 0 2.5rem;
+
+    &:last-child
+    {
+        margin-bottom: 0;
+    }
+}
+
+.resume__award-period
+{
+    flex-direction: row;
+}
+
+.resume__year
+{
+    padding-bottom: 0.8rem;
+
+    font-size: 0.93rem;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+.resume__employer
+{
+    font-size: 1.06rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.resume__prof
+{
+    font-size: 0.93rem;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+.resume__text
+{
+    padding-top: 0.5rem;
+
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: @grey;
+}
+
+.resume__speciality
+{
+    font-size: 1.06rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.resume__univesity
+{
+    font-size: 0.93rem;
+    color: @grey;
+}
+
+.resume__description
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 2rem;
+    margin-right: -2rem;
+}
+
+.resume__nomination
+{
+    font-size: 1.09rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.resume__org
+{
+    font-size: 0.93rem;
+    font-style: italic;
+    color: @grey;
+    text-transform: capitalize;
+}
