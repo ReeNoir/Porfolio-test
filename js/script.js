@@ -17,7 +17,7 @@ $("img.modal__close-img").each(function () {
 
 $(function() {
 
-
+    /* Filter */
     let filter = $("[data-filter]");
 
     filter.on("click", function(event) {
@@ -48,5 +48,34 @@ $(function() {
         }
 
     });
+
+
+    /* Modal */
+
+    const modalCall = $("[data-modal]");
+    const modalClose = $("[data-close]");
+
+    modalCall.on("click", function(event) {
+        event.preventDefault();
+
+        let $this = $(this);
+        let modalId = $this.data('modal');
+
+        $(".modal").addClass('display_none');
+        $(modalId).removeClass('display_none');
+    });
+
+    modalClose.on("click", function() {
+        $(".modal").addClass('display_none');
+    });
+
+    $(".modal").on("click", function() {
+        $(this).addClass('display_none');
+    });
+
+    $(".modal__inner").on("click", function(event) {
+        event.stopPropagation();
+    });
+
 
 });
