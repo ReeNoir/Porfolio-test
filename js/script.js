@@ -14,3 +14,39 @@ $("img.modal__close-img").each(function () {
         $img.replaceWith($svg);
     }, "xml");
 });
+
+$(function() {
+
+
+    let filter = $("[data-filter]");
+
+    filter.on("click", function(event) {
+        event.preventDefault();
+
+        let category =  $(this).data('filter');
+
+        if (category == 'all')
+        {
+            $("[data-categor]").removeClass('display_none');
+        }
+        else
+        {
+            $("[data-categor]").each(function() {
+
+                let workCat = $(this).data('categor');
+        
+                if(workCat != category)
+                {
+                    $(this).addClass('display_none');
+                }
+                else
+                {
+                    $(this).removeClass('display_none');
+                }
+        
+            });
+        }
+
+    });
+
+});

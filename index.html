@@ -11,7 +11,7 @@
     <script src="https://kit.fontawesome.com/47ad07e7c3.js" crossorigin="anonymous"></script>
     <title>Portfolio</title>
 </head>
-<body class="no-scroll">
+<body>
 
 <!-- Header -->
 <header class="header">
@@ -73,97 +73,97 @@
 
     <div class="works__inner">
         <nav class="works__nav">
-            <a href="#" class="nav-element works__nav-element">all</a>
-            <a href="#" class="nav-element works__nav-element">app</a>
-            <a href="#" class="nav-element works__nav-element">website</a>
-            <a href="#" class="nav-element works__nav-element">interaction</a>
+            <a href="#" class="nav-element works__nav-element" data-filter="all">all</a>
+            <a href="#" class="nav-element works__nav-element" data-filter="app">app</a>
+            <a href="#" class="nav-element works__nav-element" data-filter="website">website</a>
+            <a href="#" class="nav-element works__nav-element" data-filter="interaction">interaction</a>
         </nav>
         <div class="works__cards">
 
-            <div class="card works__card">
+            <div class="card works__card" data-categor="app">
                 <img src="img/work__placeholder.jpg" alt="placehold" class="img card__img">
                 <div class="card__info works__info">
-                    <div class="card__category works__category">Category</div>
+                    <div class="card__category works__category">app</div>
                     <div class="card__name works__name">
                         Project Title
                         <time class="card__date" datetime="2022-11-12 12:52">2022</time>
                     </div>
                 </div>
             </div>
-            <div class="card works__card">
+            <div class="card works__card" data-categor="website">
                 <img src="img/work__placeholder.jpg" alt="placehold" class="img card__img">
                 <div class="card__info works__info">
-                    <div class="card__category works__category">Category</div>
+                    <div class="card__category works__category">website</div>
                     <div class="card__name works__name">
                         Project Title
                         <time class="card__date" datetime="2022-11-12 12:52">2022</time>
                     </div>
                 </div>
             </div>
-            <div class="card works__card">
+            <div class="card works__card" data-categor="website">
                 <img src="img/work__placeholder.jpg" alt="placehold" class="img card__img">
                 <div class="card__info works__info">
-                    <div class="card__category works__category">Category</div>
+                    <div class="card__category works__category">website</div>
                     <div class="card__name works__name">
                         Project Title
                         <time class="card__date" datetime="2022-11-12 12:52">2022</time>
                     </div>
                 </div>
             </div>
-            <div class="card works__card">
+            <div class="card works__card" data-categor="interaction">
                 <img src="img/work__placeholder.jpg" alt="placehold" class="img card__img">
                 <div class="card__info works__info">
-                    <div class="card__category works__category">Category</div>
+                    <div class="card__category works__category">interaction</div>
                     <div class="card__name works__name">
                         Project Title
                         <time class="card__date" datetime="2022-11-12 12:52">2022</time>
                     </div>
                 </div>
             </div>
-            <div class="card works__card">
+            <div class="card works__card" data-categor="app">
                 <img src="img/work__placeholder.jpg" alt="placehold" class="img card__img">
                 <div class="card__info works__info">
-                    <div class="card__category works__category">Category</div>
+                    <div class="card__category works__category">app</div>
                     <div class="card__name works__name">
                         Project Title
                         <time class="card__date" datetime="2022-11-12 12:52">2022</time>
                     </div>
                 </div>
             </div>
-            <div class="card works__card">
+            <div class="card works__card" data-categor="website">
                 <img src="img/work__placeholder.jpg" alt="placehold" class="img card__img">
                 <div class="card__info works__info">
-                    <div class="card__category works__category">Category</div>
+                    <div class="card__category works__category">website</div>
                     <div class="card__name works__name">
                         Project Title
                         <time class="card__date" datetime="2022-11-12 12:52">2022</time>
                     </div>
                 </div>
             </div>
-            <div class="card works__card">
+            <div class="card works__card" data-categor="app">
                 <img src="img/work__placeholder.jpg" alt="placehold" class="img card__img">
                 <div class="card__info works__info">
-                    <div class="card__category works__category">Category</div>
+                    <div class="card__category works__category">app</div>
                     <div class="card__name works__name">
                         Project Title
                         <time class="card__date" datetime="2022-11-12 12:52">2022</time>
                     </div>
                 </div>
             </div>
-            <div class="card works__card">
+            <div class="card works__card" data-categor="interaction">
                 <img src="img/work__placeholder.jpg" alt="placehold" class="img card__img">
                 <div class="card__info works__info">
-                    <div class="card__category works__category">Category</div>
+                    <div class="card__category works__category">interaction</div>
                     <div class="card__name works__name">
                         Project Title
                         <time class="card__date" datetime="2022-11-12 12:52">2022</time>
                     </div>
                 </div>
             </div>
-            <div class="card works__card">
+            <div class="card works__card" data-categor="website">
                 <img src="img/work__placeholder.jpg" alt="placehold" class="img card__img">
                 <div class="card__info works__info">
-                    <div class="card__category works__category">Category</div>
+                    <div class="card__category works__category">website</div>
                     <div class="card__name works__name">
                         Project Title
                         <time class="card__date" datetime="2022-11-12 12:52">2022</time>
@@ -315,7 +315,7 @@
 
 
 <!-- Works Modal -->
-<div class="modal modal_none">
+<div class="modal display_none">
 <div class="modal__inner works__modal">
 
     <button class="modal__close-btn" type="button">
@@ -350,7 +350,7 @@
 </div>
 
 <!-- Resume Modal -->
-<div class="modal modal_none">
+<div class="modal display_none">
 <div class="modal__inner resume__modal">
 
     <button class="modal__close-btn" type="button">
@@ -463,7 +463,7 @@
 </div>
 
 <!-- Hire-me Modal -->
-<div class="modal">
+<div class="modal display_none">
 <div class="modal__inner hire-me">
 
     <button class="modal__close-btn" type="button">
@@ -487,7 +487,7 @@
                 <legend>Request</legend>
                 <textarea type="text" placeholder="Type your request..." class="hire-me__request-box" name="request"></textarea>
             </fieldset>
-            <div class="help-right"><button class="hire-me__send-btn btn" type="submit">Send</button></div>
+            <button class="hire-me__send-btn btn" type="submit">Send</button>
         </form>
     </div>
     <img src="img/Hire-me__placehold.jpg" alt="" class="hire-me__img">
