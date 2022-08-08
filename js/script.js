@@ -63,19 +63,47 @@ $(function() {
 
         $(".modal").addClass('display_none');
         $(modalId).removeClass('display_none');
+        $('body').addClass('no-scroll');
+
+        $('#works__slider').slick('setPosition');
     });
 
     modalClose.on("click", function() {
         $(".modal").addClass('display_none');
+        $('body').removeClass('no-scroll');
     });
 
     $(".modal").on("click", function() {
         $(this).addClass('display_none');
+        $('body').removeClass('no-scroll');
     });
 
     $(".modal__inner").on("click", function(event) {
         event.stopPropagation();
     });
 
+
+
+
+    /* Slider: https://kenwheeler.github.io/slick/ */
+    $('#works__slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true
+    });
+
+    $('.works__prev').on('click', function(event) {
+        event.preventDefault();
+
+        $('#works__slider').slick('slickPrev');
+    });
+
+    $('.works__next').on('click', function(event) {
+        event.preventDefault();
+
+        $('#works__slider').slick('slickNext');
+    });
 
 });
