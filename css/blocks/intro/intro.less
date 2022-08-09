@@ -5,5 +5,40 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: url(../../img/intro__bg.svg) bottom no-repeat;
+    background: url(../../img/intro__bg.svg) bottom right no-repeat;
+    background-size: 845px;
+
+    @media (max-width: 926px)
+    {
+        background-size: 770px;
+    }
+    
+    @media (max-width: 800px)
+    {
+        background-size: 605px;
+    }
+
+    @media (max-width: 599px)
+    {
+        background: none;
+    }
+}
+
+.intro__photo
+{
+    @media (max-width: 800px)
+    {
+        width: 320px;
+    }
+
+    @media (max-width: 599px)
+    {
+        display: none;
+    }
+}
+
+.intro__img
+{
+    width: 100%;
+    height: auto;
 }

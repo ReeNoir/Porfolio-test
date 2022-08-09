@@ -1,0 +1,42 @@
+// main: ../../style.less
+
+.header__burger
+{
+    display: none;
+    position: relative;
+    width: 29px;
+    height: 3px;
+
+    background-color: @black;
+
+    &:after
+    {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: -8px;
+        z-index: 1;
+        width: 29px;
+        height: 3px;
+    
+        background-color: @black;
+    }
+
+    &:before
+    {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 8px;
+        z-index: 1;
+        width: 29px;
+        height: 3px;
+    
+        background-color: @black;
+    }
+
+    @media (max-width: 789px)
+    {
+        display: block;
+    }
+}
