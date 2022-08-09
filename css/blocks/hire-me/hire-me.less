@@ -6,6 +6,11 @@
     display: flex;
     flex-direction: row;
     position: relative;
+
+    @media (max-width: 420px)
+    {
+        height: 100%;
+    }
 }
 
 .hire-me__contact-window
@@ -13,11 +18,21 @@
     padding: 2.3rem;
     width: 48%;
     background-color: @white;
+
+    @media (max-width: 620px)
+    {
+        width: 100%;
+    }
 }
 
 .hire-me__img
 {
     width: 52%;
+
+    @media (max-width: 620px)
+    {
+        display: none;
+    }
 }
 
 .hire-me__title
@@ -67,7 +82,7 @@
 
     & legend
     {
-        padding-bottom: 0.5rem;
+        padding-bottom: 0.5rem; 
     }
 
     & input,
