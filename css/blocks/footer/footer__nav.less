@@ -20,4 +20,17 @@
     {
         text-decoration: underline;
     }
+
+    @media (max-width: 1050px)
+    {
+        &:not(:last-child)
+        {
+            display: none;
+        }
+    }
+
+    @media (max-width: 510px)
+    {
+        margin: 0 auto;
+    }
 }

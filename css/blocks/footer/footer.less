@@ -3,13 +3,18 @@
 .footer
 {
     background-color: @black;
-    height: 58px;
+    padding-bottom: 0.8rem;
 }
 
 .footer__inner
 {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 510px)
+    {
+        flex-direction: column;
+    }
 }
 
 .footer__info
@@ -17,6 +22,11 @@
     margin-top: 0.8rem;
     display: flex;
     align-items: center;
+
+    @media (max-width: 510px)
+    {
+        flex-direction: column;
+    }
 }
 
 .footer__copyright
@@ -24,4 +34,9 @@
     margin-right: 3rem;
 
     color: @grey-light;
+
+    @media (max-width: 510px)
+    {
+        margin-right: 0;
+    }
 }

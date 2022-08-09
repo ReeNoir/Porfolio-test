@@ -7,6 +7,18 @@
     margin-bottom: 2rem;
 
     cursor: auto;
+
+    @media (max-width: 782px)
+    {
+        margin-bottom: 0.8rem;
+        height: 458px;
+    }
+
+    @media (max-width: 420px)
+    {
+        width: 90%;
+        height: auto;
+    }
 }
 
 .blogs__name
@@ -40,6 +52,11 @@
     font-size: 0.8rem;
     font-weight: 300;
     color: @grey;
+
+    @media (max-width: 420px)
+    {
+        margin-bottom: 1.6rem;
+    }
 }
 
 .blogs__photo
