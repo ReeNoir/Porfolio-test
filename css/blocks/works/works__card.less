@@ -18,12 +18,35 @@
 
         box-shadow: 1px 1px 25px rgba(#000, 0.5);
     }
+
+    @media (max-width: 1185px)
+    {
+        width: 340px;
+        height: 340px;
+        margin: 0 auto;
+    }
+
+    @media (max-width: 400px)
+    {
+        width: 240px;
+        height: 240px;
+    }
 }
 
 .works__wrapper
 {
     width: 33.333%;
     margin-bottom: 2rem;
+
+    @media (max-width: 1100px)
+    {
+        width: 50%;
+    }
+
+    @media (max-width: 740px)
+    {
+        width: 100%;
+    }
 }
 
 .works__info
@@ -35,6 +58,16 @@
 .works__category
 {
     margin: 0.5rem 0;
+
+    @media (max-width: 740px)
+    {
+        margin: 1rem 0;
+    }
+
+    @media (max-width: 400px)
+    {
+        margin: 0.5rem 0;
+    }
 }
 
 .works__name

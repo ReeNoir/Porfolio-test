@@ -35,12 +35,43 @@
         bottom: 0;
         z-index: 1;
     }
+
+    @media (max-width: 1105px)
+    {
+        width: 45%;
+    }
+
+    @media (max-width: 1045px)
+    {
+        width: 35%;
+
+        &:before
+        {
+            width: 313px;
+            height: 313px;
+        }
+    }
+
+    @media (max-width: 991px)
+    {
+        display: none;
+    }
 }
 
 .about-me__content
 {
     margin: 2rem 0 0 4rem;
     width: 50%;
+
+    @media (max-width: 1105px)
+    {
+        margin: 1rem 0 0 2rem;
+    }
+
+    @media (max-width: 991px)
+    {
+        width: 100%;
+    }
 }
 
 .about-me__title
@@ -48,6 +79,11 @@
     font-size: 3rem;
     font-weight: 700;
     line-height: 1.1;
+
+    @media (max-width: 420px)
+    {
+        font-size: 2rem;
+    }
 }
 
 .about-me__subtitle
@@ -59,6 +95,21 @@
     font-weight: 700;
     line-height: 1.1;
     color: rgba(@black, 0.15);
+
+    @media (max-width: 1045px)
+    {
+        font-size: 5.8rem;
+    }
+
+    @media (max-width: 991px)
+    {
+        left: 0;
+    }
+
+    @media (max-width: 420px)
+    {
+        font-size: 4rem;
+    }
 }
 
 .about-me__text
@@ -67,4 +118,9 @@
 
     font-size: 0.8rem;
     font-weight: 300;
+
+    @media (max-width: 420px)
+    {
+        font-size: 1rem;
+    }
 }
